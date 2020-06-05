@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { AuthModule } from './auth/auth.module';
 
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 import {
@@ -13,7 +13,6 @@ import {
   FooterComponent,
   HeaderComponent,
 } from './shared';
-import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -27,6 +26,8 @@ import { from } from 'rxjs';
     HomeModule,
     SharedModule,
     ReactiveFormsModule,
+    FormsModule,
+    AuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
